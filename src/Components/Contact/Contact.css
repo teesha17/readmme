@@ -1,0 +1,53 @@
+.contact-container{
+    background-color: rgb(213, 211, 211);
+    padding-bottom: 3%;
+}
+
+.contact-heading{
+    font-size: 2rem;
+    padding:1% 3%;
+    padding-top:5%;
+}
+
+form{
+    display: flex;
+    padding:5%;
+    flex-direction: column;
+    box-shadow: rgba(0,0,0,0.24) 0px 3px 8px;
+    margin:3% 3%;
+    background: #fff;
+}
+
+form input , textarea, button{
+    border:0;
+    outline: 0;
+    border-bottom: 1px solid black;
+    resize: none;
+    font-size: 1.1rem;
+    margin-left:30%;
+    margin-top:20px;
+    max-width:300px;
+}
+
+form textarea{
+    height:3em;
+}
+
+.sendbutton{
+    background-color: black;
+    color:white;
+    padding:1%;
+    max-width: fit-content;
+}
+
+@media only screen and (max-width:620px){
+    form input , textarea, button{
+        margin-left:15%;
+    }
+}
+
+@media only screen and (max-width:480px){
+    form input , textarea, button{
+        margin-left:5%;
+    }
+}
