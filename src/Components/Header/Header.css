@@ -17,14 +17,14 @@
     width: 25px;
     height: 2px;
     margin-top: 8px;
-    background-color:black;
+    background-color:white;
 }
 
 .navBar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #3498db;
+    background-color: #763ae2;
     padding: 0.5% 0;
     box-shadow: 2px 1px 2px black;
 }
@@ -34,7 +34,7 @@
     font-weight: 600;
     letter-spacing: 1px;
     cursor: pointer;
-    color: black;
+    color: white;
     margin-left:2%;
 }
 
@@ -45,7 +45,7 @@
 }
 
 .navBar a {
-    color: black;
+    color: white;
     text-decoration: none;
     font-size: 1.2rem;
     margin: 0 10px;
@@ -102,7 +102,7 @@
 
     .navbar-items {
         flex-direction: column;
-        background-color: #3498db;
+        background-color: #763ae2;
         width: 100%;
         padding: 20%;
         margin-top: -2500px;
@@ -121,7 +121,8 @@
     }
 
     .navBar a:hover {
-        background-color: #9e1b32;
+        background-color: #4e239b;
+        border-radius: 5%;
         padding: 1px 10px;
         color: white;
     }

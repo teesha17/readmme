@@ -1,6 +1,8 @@
 .contact-container{
-    background-color: rgb(213, 211, 211);
+    background-image: linear-gradient(180deg,#091335,rgba(9,19,53,0),rgba(9,19,53,0),rgba(9,19,53,0),#091335);
     padding-bottom: 3%;
+    position: relative;
+    z-index:1;
 }
 
 .contact-heading{
@@ -15,7 +17,6 @@ form{
     flex-direction: column;
     box-shadow: rgba(0,0,0,0.24) 0px 3px 8px;
     margin:3% 3%;
-    background: #fff;
 }
 
 form input , textarea, button{

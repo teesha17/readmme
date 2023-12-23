@@ -1,5 +1,7 @@
-import React, { useState } from 'react'
+import React, { useState , useEffect } from 'react'
 import './Contact.css'
+import Aos from 'aos';
+import 'aos/dist/aos.css'
 
 const Contact = () => {
   const [user , setuser] = useState(
@@ -34,15 +36,19 @@ const Contact = () => {
       alert("An error occured");
     }
   }
+  useEffect(() => {
+    Aos.init({ duration: 1500 });
+  }, []);
+
   return (
     <div className='contact-container'>
       <div className='contentBox'>
-        <p className='contact-heading'>Contact Us</p>
-        <form method="POST">
+        <p className='contact-heading' data-aos="fade-right">Contact Us</p>
+        <form method="POST" data-aos="zoom-in">
           <input type="text" name="Name" value={user.Name} placeholder='Enter your E-mail' required autoComplete='off' onChange={data} />
           <input type="text" name="Email" value={user.Email} placeholder='Enter your Name' required autoComplete='off' onChange={data} />
-          <textarea name="Message" value={user.Message} placeholder='Your Message' autoComplete='off' onChange={data}></textarea>
-          <button className='sendbutton' type='submit' onClick={senddata}>Send Message</button>
+          <textarea style={{ width: '300px', height: '130px' }} name="Message" value={user.Message} placeholder='Your Message' autoComplete='off' onChange={data}></textarea>
+          <button className='sendbutton' type='submit' onClick={senddata} data-aos="flip-left">Send Message</button>
         </form>
       </div>
     </div>
