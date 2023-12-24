@@ -6,7 +6,7 @@ import Timeline from '../Timeline/Timeline.js'
 
 const Homepage = () => {
   return (
-    <div>
+    <div className='home'>
       <div>YHA KOI BADHIYA SA BACKGROUND KE SATH WELCOME MESSAGE HOGA</div>
       <Event />
       <Timeline />

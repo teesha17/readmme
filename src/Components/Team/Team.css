@@ -14,7 +14,7 @@
     background: #161623;
 }
 
-.card{
+.container .card{
     position:relative;
     width:280px;
     height:370px;
@@ -29,7 +29,7 @@
     flex-direction: column;
 }
 
-.card .content{
+.container .card .content{
     position: relative;
     display:flex;
     justify-content: center;
@@ -39,7 +39,7 @@
     transition: 0.5s ease-in-out;
 }
 
-.card:hover .content{
+.container .card:hover .content{
     opacity: 1;
     transform: translateY(-20px);
 }
@@ -92,7 +92,7 @@
     transition-delay: calc(0.1s * var(--i));
 }
 
-.card:hover .social li{
+.container .card:hover .social li{
     transform: translateY(0px);
     opacity:1;
 }
@@ -103,7 +103,7 @@
 }
 
 @media only screen and (max-width:670px){
-    .card{
+    .container .card{
         margin:2%;
     }
 
@@ -112,7 +112,7 @@
         padding-top:5%;
     }
 
-    .card .content{
+    .container .card .content{
         opacity: 1;
     }
 }
