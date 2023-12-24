@@ -135,12 +135,12 @@ const Timeline = () => {
                 color: "white",
                 textAlign: "center",
                 textTransform: "uppercase",
-                fontSize: "1.2rem",
+                fontSize: "1.4rem",
               }}
             >
               {selectedDay}
             </div>
-            <VerticalTimeline lineColor="#FFF">
+            <VerticalTimeline lineColor="#000">
               {scheduleday1.map((event, index) => (
                 <VerticalTimelineElement
                   key={index}
