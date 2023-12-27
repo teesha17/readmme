@@ -19,7 +19,7 @@ form{
     margin:3% 3%;
 }
 
-form input , textarea, button{
+form input , textarea /*button*/{
     border:0;
     outline: 0;
     border-bottom: 1px solid black;
@@ -42,13 +42,13 @@ form textarea{
 }
 
 @media only screen and (max-width:620px){
-    form input , textarea, button{
+    form input , textarea /*button*/{
         margin-left:15%;
     }
 }
 
 @media only screen and (max-width:480px){
-    form input , textarea, button{
+    form input , textarea /*button*/{
         margin-left:5%;
     }
 }

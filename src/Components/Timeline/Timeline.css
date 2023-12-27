@@ -39,7 +39,7 @@
   justify-content: center;
 }
 
-.days button {
+ .days .btn1 {
   font-size: 1.1rem;
   margin: 3% 2%;
   background-color: black;
@@ -48,9 +48,9 @@
   cursor: pointer;
   transition: 0.5s;
   border-radius: 20px;
-}
+} 
 
-.days button:hover {
+.days .btn1:hover {
   transform: scale(1.1);
 }
 

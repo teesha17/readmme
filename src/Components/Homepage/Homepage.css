@@ -1,3 +1,23 @@
 .home{
     padding-top:10px;
 }
+.gallery-carousel{
+    background-color: black;
+    align-items: center;
+    text-align: center;
+}
+.gallery-btn{
+    color:#1f3d47;
+    background: #8fabba;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    border:none;
+    outline: none;
+    font-weight: 500;
+    margin: 0;
+    margin-bottom: 50px;
+    cursor: pointer;
+    width:150px;
+    text-align: center;
+}

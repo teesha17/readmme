@@ -3,23 +3,23 @@ import { Link } from 'react-router-dom'
 import './Homepage.css'
 import Event from '../Events/Event.js'
 import Timeline from '../Timeline/Timeline.js'
-
+import Gallery from '../Gallery/Gallery.js'
+import Timer from './Timer/timer.js'
 const Homepage = () => {
   return (
     <div className='home'>
-      <div>YHA KOI BADHIYA SA BACKGROUND KE SATH WELCOME MESSAGE HOGA</div>
+    <div>
+      
+    </div>
+      <Timer/>
       <Event />
       <Timeline />
-      <div>YHA KUCH IMAGES LAGA DENGE 3 SE 4 FROM TEAM MEMBERS</div>
-      <Link to='/team'>
-      <button>MORE</button>
-      </Link>
-      <div>YHA MORE BUTTON MAIN TEAM MEMBERS PAGE PE LE JAYGA</div>
-      <div>YHA FHIRSE KUCH IMAGES LAGA DENGE 3 SE 4 FOR GALLERY</div>
+      <div className='gallery-carousel'>
+     <Gallery/>
       <Link to='/gallery'>
-      <button>MORE</button>
+      <button className='gallery-btn'>MORE</button>
       </Link>
-      <div>OR AGAR LAST MAI SPONSERS KE LIYE BOLENGE TO VO BHI KAR DENGE</div>
+      </div>
     </div>
   )
 }

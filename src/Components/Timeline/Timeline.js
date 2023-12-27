@@ -120,8 +120,8 @@ const Timeline = () => {
         <div>TIMELINE</div>
       </div>
       <div className="days">
-        <button onClick={() => showTimeline("day1")}>Day 1</button>
-        <button onClick={() => showTimeline("day2")}>Day 2</button>
+        <button onClick={() => showTimeline("day1")} className="btn1">Day 1</button>
+        <button onClick={() => showTimeline("day2")} className="btn1">Day 2</button>
       </div>
       <div className="timeline">
         {selectedDay === "day1" && (
